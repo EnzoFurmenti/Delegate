@@ -13,6 +13,9 @@
 		96D87D291D49C7FB00E9B528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D87D271D49C7FB00E9B528 /* Main.storyboard */; };
 		96D87D2B1D49C7FB00E9B528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D87D2A1D49C7FB00E9B528 /* Assets.xcassets */; };
 		96D87D2E1D49C7FB00E9B528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D87D2C1D49C7FB00E9B528 /* LaunchScreen.storyboard */; };
+		96D87D371D49CB6700E9B528 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D87D361D49CB6700E9B528 /* Patient.m */; };
+		96D87D3A1D49D6DA00E9B528 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D87D391D49D6DA00E9B528 /* Doctor.m */; };
+		96D87D401D49E8E300E9B528 /* FriendDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D87D3F1D49E8E300E9B528 /* FriendDoctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		96D87D2A1D49C7FB00E9B528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96D87D2D1D49C7FB00E9B528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96D87D2F1D49C7FB00E9B528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96D87D351D49CB6700E9B528 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		96D87D361D49CB6700E9B528 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		96D87D381D49D6DA00E9B528 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		96D87D391D49D6DA00E9B528 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		96D87D3E1D49E8E300E9B528 /* FriendDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDoctor.h; sourceTree = "<group>"; };
+		96D87D3F1D49E8E300E9B528 /* FriendDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDoctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +69,12 @@
 			children = (
 				96D87D211D49C7FB00E9B528 /* AppDelegate.h */,
 				96D87D221D49C7FB00E9B528 /* AppDelegate.m */,
-				96D87D241D49C7FB00E9B528 /* ViewController.h */,
-				96D87D251D49C7FB00E9B528 /* ViewController.m */,
-				96D87D271D49C7FB00E9B528 /* Main.storyboard */,
-				96D87D2A1D49C7FB00E9B528 /* Assets.xcassets */,
-				96D87D2C1D49C7FB00E9B528 /* LaunchScreen.storyboard */,
-				96D87D2F1D49C7FB00E9B528 /* Info.plist */,
+				96D87D381D49D6DA00E9B528 /* Doctor.h */,
+				96D87D391D49D6DA00E9B528 /* Doctor.m */,
+				96D87D3E1D49E8E300E9B528 /* FriendDoctor.h */,
+				96D87D3F1D49E8E300E9B528 /* FriendDoctor.m */,
+				96D87D351D49CB6700E9B528 /* Patient.h */,
+				96D87D361D49CB6700E9B528 /* Patient.m */,
 				96D87D1E1D49C7FB00E9B528 /* Supporting Files */,
 			);
 			path = Delegate;
@@ -74,6 +83,12 @@
 		96D87D1E1D49C7FB00E9B528 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96D87D241D49C7FB00E9B528 /* ViewController.h */,
+				96D87D251D49C7FB00E9B528 /* ViewController.m */,
+				96D87D271D49C7FB00E9B528 /* Main.storyboard */,
+				96D87D2A1D49C7FB00E9B528 /* Assets.xcassets */,
+				96D87D2C1D49C7FB00E9B528 /* LaunchScreen.storyboard */,
+				96D87D2F1D49C7FB00E9B528 /* Info.plist */,
 				96D87D1F1D49C7FB00E9B528 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -151,8 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D87D261D49C7FB00E9B528 /* ViewController.m in Sources */,
+				96D87D371D49CB6700E9B528 /* Patient.m in Sources */,
+				96D87D401D49E8E300E9B528 /* FriendDoctor.m in Sources */,
 				96D87D231D49C7FB00E9B528 /* AppDelegate.m in Sources */,
 				96D87D201D49C7FB00E9B528 /* main.m in Sources */,
+				96D87D3A1D49D6DA00E9B528 /* Doctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +321,7 @@
 				96D87D341D49C7FB00E9B528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
