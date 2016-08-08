@@ -10,6 +10,9 @@
 #import "Patient.h"
 @interface FriendDoctor : NSObject <PatientDelegate>
 
+@property(nonatomic, strong)NSString *name;
+
+
 - (void) relaxation:(Patient*)patient;
 - (void) makeVitamine:(Patient*)patient;
 

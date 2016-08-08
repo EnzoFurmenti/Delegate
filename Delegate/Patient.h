@@ -18,12 +18,20 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) CGFloat temperature;
 @property (nonatomic, assign) BOOL shivering;
+@property (nonatomic, assign) BOOL headAche;
+@property (nonatomic, assign) BOOL stomachAche;
+@property (nonatomic, assign) BOOL footAche;
+@property (nonatomic, assign) BOOL goodGradeDoctor;
+
 @property (nonatomic, weak) id <PatientDelegate> delegate;
 
 
 - (BOOL) fellsBetter;
 - (void) takePill;
 - (void) makeShot;
+- (void) takePillForHead;
+- (void) massage;
+- (void) takePillForStomach;
 
 @end
 

@@ -11,5 +11,7 @@
 
 @interface Doctor : NSObject<PatientDelegate>
 
+@property(nonatomic, strong)NSString *name;
+
 
 @end

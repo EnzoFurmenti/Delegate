@@ -16,6 +16,7 @@
 
 - (void) patientFeelsBad: (Patient*)patient{
     
+    
     if(patient.shivering ||(patient.temperature >= 37.0 && patient.temperature <=39.5)){
         if(patient.shivering)
         {
@@ -30,7 +31,7 @@
     else if(patient.temperature > 39.5)
     {
         NSLog(@"У пациента %@ высокая температура",patient.name);
-            [patient makeShot];
+        [patient makeShot];
     }
     else
     {
@@ -38,6 +39,24 @@
         NSLog(@"%@ переутомление. Отдыхать",patient.name);
     }
     
+    if(patient.headAche)
+    {
+        NSLog(@"У пациента %@ ,болит голова",patient.name);
+        [patient takePillForHead];
+    }
+    if(patient.footAche)
+    {
+        NSLog(@"У пациента %@ болит нога",patient.name);
+        [patient massage];
+    }
+    
+    if(patient.stomachAche)
+    {
+        NSLog(@"У пациента %@  болит живот",patient.name);
+        [patient takePillForStomach];
+    }
+    
+    patient.goodGradeDoctor = arc4random() % 2;
 }
 
 @end

@@ -49,6 +49,12 @@
         [self relaxation:patient];
     }
     
+    if(patient.headAche || patient.stomachAche || patient.footAche)
+    {
+        NSLog(@"Пациенту %@ надо пройтись погулять",patient.name);
+    }
+    
+    patient.goodGradeDoctor = arc4random() % 2;
 }
 
 @end

@@ -30,4 +30,17 @@
     NSLog(@"Пациенту %@ сделали укол",self.name);
 }
 
+- (void) takePillForHead{
+    NSLog(@"Пациент %@ принял таблетку от головной боли",self.name);
+}
+
+
+- (void) massage{
+    NSLog(@"Пациенту %@   сделали массаж",self.name);
+}
+- (void) takePillForStomach{
+    
+    NSLog(@"Пациенту %@ дали таблетку от живота",self.name);
+}
+
 @end
